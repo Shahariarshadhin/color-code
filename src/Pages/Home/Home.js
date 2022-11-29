@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import colorImage from '../../assests/colorPicker-removebg-preview.png'
 import { TfiHandPointRight } from "react-icons/tfi";
 
+
 const Home = () => {
 
     const [color, setColor] = useState("")
+
 
 
 
@@ -36,13 +38,18 @@ const Home = () => {
 
                         <h1 className="text-5xl font-bold text-[#EC0E0E] italic mb-2">Get Your</h1>
                         <h1 className="text-4xl font-semibold italic mt-2 mb-2">Color and Color Code From Color Picker.</h1>
-                        <div className="flex">
+
+
+                        <div className='flex'>
+
                             <div>
-                                <h1 className="text-3xl font-semibold italic mt-2">Let's Go</h1>
+                                <h2 className="card-title text-3xl font-semibold italic mt-2 mr-10">Let's Go</h2>
                             </div>
-                            <div className="text-3xl">
-                                <h1><TfiHandPointRight></TfiHandPointRight></h1>
+                            <div className="text-3xl card-actions items-center justify-end mt-2 text-[#EC0E0E]">
+                                <TfiHandPointRight></TfiHandPointRight>
+
                             </div>
+
                         </div>
 
 
@@ -52,6 +59,11 @@ const Home = () => {
 
                 </div>
             </div>
+
+
+
+
+
 
 
 

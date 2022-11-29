@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assests/CClogo-removebg-preview.png'
 
 const Navbar = () => {
     return (
@@ -27,9 +28,17 @@ const Navbar = () => {
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-3xl font-bold italic text-white">Color Picker</a>
+                    <div className='flex '>
+                        <div >
+                            <img className='w-12 h-12 lg:ml-24' src={logo} alt="" />
+
+                        </div>
+                        <div>
+                            <a className="btn btn-ghost normal-case lg:text-3xl font-bold italic text-white ">Color Picker</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="navbar-center hidden lg:flex text-white">
+                <div className="navbar-center hidden lg:flex text-white font-bold text-xl">
                     <ul className="menu menu-horizontal p-0">
                         <li><a>Picker</a></li>
                         <li tabIndex={0}>
